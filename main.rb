@@ -56,3 +56,7 @@ delete '/list/:id' do
 	List.get(params[:id]).destroy
 	redirect to('/')
 end
+
+get '/styles/style.css' do
+	scss :style
+end

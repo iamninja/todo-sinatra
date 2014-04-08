@@ -1,3 +1,17 @@
+$orange:#D78123;
+$blue:#1E1641;
+$green:#02d330;
+$grey: #999;
+
+@mixin button($color){
+    background:$color;
+    border: 2px solid darken($color,15%);
+    cursor: pointer;
+    color: #fff;
+    width: 150px;
+    margin-left:4px;
+}
+
 .completed{
   text-decoration: line-through;
   }
@@ -51,4 +65,30 @@ form.delete input{
   width:23%;
   margin:0 1%;
   border-top:solid 5px #ccc;
+  }
+
+  h1.logo{
+  font-family: helvetica,arial,sans-serif;
+  font-size: 24px;
+  color: white;
+  padding: 64px 0 0;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: normal;
+  letter-spacing: 0.3em;
+  // background: transparent url(/logo.png) 50% 0 no-repeat;
+  }
+
+  .list{
+    float: left;  
+    background: #fff;
+    
+    h1{  
+      color:$orange;
+    }
+  } 
+
+  .button{
+    @include button($orange);
   }
