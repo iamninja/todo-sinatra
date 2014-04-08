@@ -11,3 +11,5 @@ development.db
 
 # sass cache
 .sass-cache/*
+
+.bundle
